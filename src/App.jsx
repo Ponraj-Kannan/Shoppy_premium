@@ -23,12 +23,13 @@ function App() {
   };
 
     return (
-        <BrowserRouter>
-            <Navbar toggleToSignIn={toggleToSignIn} toggleToSignUp={toggleToSignUp} />
-            <Routes>
-                <Route path="/login" element={<SignIn page={page} toggleToSignIn={toggleToSignIn} toggleToSignUp={toggleToSignUp} toggleToReset={toggleToReset}/>} />
-            </Routes>
-        </BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        {/* <BrowserRouter> */}
+        <Navbar toggleToSignIn={toggleToSignIn} toggleToSignUp={toggleToSignUp} />
+        <Routes>
+            <Route path="/login" element={<SignIn page={page} toggleToSignIn={toggleToSignIn} toggleToSignUp={toggleToSignUp} toggleToReset={toggleToReset}/>} />
+        </Routes>
+      </BrowserRouter>
     );
 }
 
