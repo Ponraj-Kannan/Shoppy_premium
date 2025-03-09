@@ -1,0 +1,242 @@
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #A7867E;
+}
+
+.navbar-brand {
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #58d68d; */
+}
+
+.nav-actions {
+    padding: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #58d68d; */
+}
+
+.nav-language {
+    font-size: .8rem;
+    opacity: 0.7;
+    padding: 10px 20px;
+    /* background-color: #DAF7A6; */
+}
+
+.btn-login, .btn-signup {
+    padding: 8px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 1px solid #121212;
+    background-color: #12121200;
+}
+
+.btn-login:hover, .btn-signup:hover {
+    background-color: #121212ee;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-language {
+        display: none;
+    }
+}
+
+/* Login */
+
+.signin-container {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e1b39a;
+}
+
+.signin-background-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.signin-form-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffd9;
+}
+
+.signin-header, .password-reset-header {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid cornflowerblue; */
+}
+
+.google-signin-button {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid #121212;
+    background-color: #12121200;
+}
+
+.google-icon {
+    margin-right: 8px;
+    width:20px;
+}
+
+.separator-container {
+    width: 80%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-contenT: space-between;
+    align-items: center;
+    color: #121212ce;
+    /* border: 1px solid cornflowerblue; */
+}
+
+.horizontal-line {
+    width: 45%;
+    color: white;
+    border: .2px solid #121212c7; /* Adjust the colour */
+}
+
+.signin-form, .signup-form {
+    width: 80%;
+    height: 300px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* border: 1px solid cornflowerblue; */
+}
+
+.input-field {
+    width: 98%;    
+    height: 20px;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #121212;
+}
+
+.input-label {
+    font-size: .9rem;
+}
+
+.signin-button, .signup-button, .password-reset-button {
+    border: 1px solid #121212;
+    padding: 8px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #121212;
+}
+
+.signin-button:hover, .signup-button:hover, .password-reset-button {
+    background-color: #121212e4;
+}
+
+.signup-prompt, .signup-link, .signin-prompt, .signin-link  {
+    color:#121212;
+    font-size: .8rem;
+}
+
+.forgot-password-link {
+    color:#121212;
+    font-size: .8rem;
+    float: right;
+}
+
+.password-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hide-icon {
+    width:17px;
+}
+
+.toggle-password-visibility-button {
+    background-color: #12121200;
+    border: none;
+    color:#121212;
+    font-size: .8rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-instruction {
+    color:#121212;
+    font-size: .8rem;
+}
+
+.password-reset-header, .password-reset-form {
+    width: 80%;
+    height: 180px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.password-reset-header {
+    height: 60px;
+}
+
+.password-reset-title {
+    font-size: 1.2rem;
+}
+
+.password-reset-instruction {
+    font-size: 0.8rem;
+    color: #676B80;
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .signin-container {
+        height: 87vh;
+    }
+    .signin-background-image {
+        display: none;
+    }
+    .signin-form-container {
+        width: 90%;
+        height: 70vh;
+    }
+}
