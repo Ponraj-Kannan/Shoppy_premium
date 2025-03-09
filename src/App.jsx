@@ -27,7 +27,7 @@ function App() {
         {/* <BrowserRouter> */}
         <Navbar toggleToSignIn={toggleToSignIn} toggleToSignUp={toggleToSignUp} />
         <Routes>
-            <Route path="/login" element={<SignIn page={page} toggleToSignIn={toggleToSignIn} toggleToSignUp={toggleToSignUp} toggleToReset={toggleToReset}/>} />
+            <Route path="/" element={<SignIn page={page} toggleToSignIn={toggleToSignIn} toggleToSignUp={toggleToSignUp} toggleToReset={toggleToReset}/>} />
         </Routes>
       </BrowserRouter>
     );
