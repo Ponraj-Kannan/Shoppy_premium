@@ -96,7 +96,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar-language, .navbar-menu {
+    .navbar-language, .navbar-menu, .navbar-search {
         display: none;
     }
     .navbar-menu-container {
